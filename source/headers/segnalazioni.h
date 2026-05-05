@@ -1,5 +1,6 @@
-#ifndef REPORT_H
-#define REPORT_H
+#ifndef SEGNALAZIONI_H
+#define SEGNALAZIONI_H
+
 #include <stddef.h>
 
 typedef enum {
@@ -31,9 +32,9 @@ typedef struct Segnalazione {
 	int data;
 	Urgenza urgenza;
 	Stato stato;
-} Report;
+} Segnalazione;
 
 /*Funzioni*/
-Report* creaSegnalazione(int id, char* nome, Categoria cat, char* desc, int data, Urgenza urg, Stato stato);
+Segnalazione* creaSegnalazione(int id, char* nome, Categoria cat, char* desc, int data, Urgenza urg, Stato stato);
 
 #endif

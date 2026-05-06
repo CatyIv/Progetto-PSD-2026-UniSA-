@@ -35,6 +35,6 @@ typedef struct Segnalazione {
 } Segnalazione;
 
 /*Funzioni*/
-Segnalazione* creaSegnalazione(int id, char* nome, Categoria cat, char* desc, int data, Urgenza urg, Stato stato);
+Segnalazione* creaSegnalazione(unsigned int id, char* nome, Categoria cat, char* desc, int data, Urgenza urg, Stato stato);
 
 #endif
